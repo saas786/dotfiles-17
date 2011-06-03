@@ -4,5 +4,6 @@ dfdir=$(pwd)
 cd ~
 
 for df in $dfdir/_*; do
-    ln -sf $df .${df#_*}
+    name=$(basename $df)
+    ln -sf $df .${name#_*}
 done
