@@ -1,3 +1,20 @@
+# Simpler shell commands
+
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+
+# Apache
+
+alias apwatch="watch --interval 5 '/usr/bin/apache2ctl status'"
+alias aprestart="/etc/init.d/apache2 restart"
+alias apreload="/etc/init.d/apache2 reload"
+
+# MySQL
+
+alias myslave="mysql -e 'show slave status\G'"
+
+# Chef
+
+alias cheflf="tail -f /var/log/chef/client.log"
+alias chefll="less -n /var/log/chef/client.log"
