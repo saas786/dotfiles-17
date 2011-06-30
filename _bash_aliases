@@ -4,6 +4,11 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+# mkdir & cd to it
+function mcd() { 
+  mkdir -p "$1" && cd "$1"; 
+}
+
 # Apache
 
 alias apwatch="watch --interval 5 '/usr/bin/apache2ctl status'"
