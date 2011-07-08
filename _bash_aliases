@@ -1,8 +1,8 @@
 # Update dotfiles
-
 function update-dotfiles() {
     pushd ~/.dotfiles
-    git pull
+    git pull origin $(uname)
+    git checkout $(uname)
     ./mklinks.sh
     source ~/.bashrc
     popd
