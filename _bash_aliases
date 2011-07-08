@@ -1,9 +1,11 @@
 # Update dotfiles
 
 function update-dotfiles() {
-    cd ~/.dotfiles
+    pushd ~/.dotfiles
     git pull
     ./mklinks.sh
+    source ~/.bashrc
+    popd
 }
 
 # Simpler shell commands
