@@ -1,3 +1,11 @@
+# Update dotfiles
+
+function update-dotfiles() {
+    cd ~/.dotfiles
+    git pull
+    ./mklinks.sh
+}
+
 # Simpler shell commands
 
 alias ll='ls -alF'
