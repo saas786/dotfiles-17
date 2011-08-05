@@ -23,7 +23,7 @@ function mcd() {
 
 # Apache
 
-alias apwatch="watch --interval 5 'apache2ctl status'"
+alias apwatch="watch --interval 1 'apache2ctl status'"
 alias aprestart="/etc/init.d/apache2 restart"
 alias apreload="/etc/init.d/apache2 reload"
 
