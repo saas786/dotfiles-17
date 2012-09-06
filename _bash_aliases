@@ -21,6 +21,10 @@ function mcd() {
   mkdir -p "$1" && cd "$1"; 
 }
 
+# Network
+
+alias mtr-hetzner "mtr -s 1500 -r -c 1000 -i 0.1"
+
 # Apache
 
 alias apwatch="watch --interval ${AW_PRD:-3} 'apache2ctl status | tail -n +9'"
