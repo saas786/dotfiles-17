@@ -17,7 +17,7 @@ if [[ -d $OMZDIR ]]; then
   mv .zshrc .zshrc.bak
 fi
 echo "Installing oh-my-zsh"
-curl -L https://raw.github.com/geewiz/oh-my-zsh/master/tools/install.sh | sh
+git clone https://github.com/geewiz/oh-my-zsh.git $OMZDIR
 
 #
 # Symlink dotfiles
