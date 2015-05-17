@@ -1,10 +1,9 @@
-# Admin dotfiles
+# The geewiz dotfiles
 
-This is a collection of configuration files like .screenrc or .bashrc
-I use on all my servers.
+My collection of configuration files for zsh, tmux and many other tools.
 
-I install them like this:
+## Installation
 
     git clone <repository> .dotfiles
     cd .dotfiles
-    ./mklinks.sh
+    ./install.sh
