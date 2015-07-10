@@ -1,1 +1,2 @@
 EXCLUDES="README*"
+SYMLINK_DIRS="gnupg"
