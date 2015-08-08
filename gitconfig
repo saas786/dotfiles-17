@@ -56,7 +56,7 @@ ss = stash save
 	tool = /Users/geewiz/bin/git-diff-cmd.sh
 [core]
 	excludesfile = /Users/geewiz/.gitignore
-	editor = vi
+	editor = vim
 [color]
 	diff = auto
 	status = auto
