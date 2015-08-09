@@ -1,3 +1,7 @@
+if &compatible
+  set nocompatible
+end
+
 call plug#begin('~/.vim/bundle')
 
 " Define bundles via Github repos
@@ -8,15 +12,16 @@ Plug 'pbrisbin/vim-mkdir'
 "Plug 'slim-template/vim-slim'
 "Plug 'thoughtbot/vim-rspec'
 "Plug 'tpope/vim-bundler'
-"Plug 'tpope/vim-endwise'
-"Plug 'tpope/vim-eunuch'
-"Plug 'tpope/vim-fugitive'
-"Plug 'tpope/vim-rails'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rails'
 "Plug 'tpope/vim-repeat'
-"Plug 'tpope/vim-surround'
+Plug 'tpope/vim-surround'
 Plug 'vim-ruby/vim-ruby'
-"Plug 'vim-scripts/tComment'
+Plug 'vim-scripts/tComment'
 Plug 'altercation/vim-colors-solarized'
+Plug 'rizzatti/dash.vim'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
