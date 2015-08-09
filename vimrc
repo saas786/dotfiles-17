@@ -23,6 +23,10 @@ nmap <leader>w :w!<cr>
 " (useful for handling the permission-denied error)
 command W w !sudo tee % > /dev/null
 
+" Load plugins
+if filereadable(expand("~/.vimrc.bundles"))
+  source ~/.vimrc.bundles
+endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
@@ -107,7 +111,7 @@ let g:netrw_liststyle=3
 syntax enable 
 
 try
-    colorscheme desert
+    colorscheme solarized
 catch
 endtry
 
