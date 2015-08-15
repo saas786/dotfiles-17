@@ -118,12 +118,14 @@ set numberwidth=5
 " Enable syntax highlighting
 syntax enable 
 
+set background=dark
+let g:solarized_termtrans = 1
+let g:solarized_termcolors=256
+
 try
     colorscheme solarized
 catch
 endtry
-
-set background=dark
 
 " Set extra options when running in GUI mode
 if has("gui_running")
