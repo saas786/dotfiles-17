@@ -1,0 +1,2 @@
+" Add a shortcut for netrw
+nmap <silent> <Leader>e :Explore<CR>
