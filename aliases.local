@@ -3,12 +3,20 @@
 alias conncheck='mtr -s 1500 -r -c 1000 -i 0.1'
 
 # Git
-alias gss="git status"
+alias gss="git status -s"
 alias gco="git checkout"
-alias gc="git commit"
+alias ga="git add"
+alias gc="git commit -v"
+alias gc!="git commit -v --amend"
+alias gca="git commit -v -a"
+alias gca!="git commit -v -a --amend"
 alias gb="git branch"
 alias glg="git log"
 alias gsp="git smart-pull"
 alias gspp="git smart-pull && git push"
 alias gwip="git commit -amWIP"
+alias gm="git merge"
 
+# Ruby
+alias be="bundle exec"
+alias bi="bundle install"
