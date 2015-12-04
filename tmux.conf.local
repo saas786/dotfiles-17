@@ -1,0 +1,5 @@
+# Bind prefix to C-s (leave C-a free for start-of-line)
+unbind C-a
+unbind C-b
+set-option -g prefix C-s
+bind-key -r C-s send-prefix
