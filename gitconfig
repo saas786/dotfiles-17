@@ -1,27 +1,38 @@
 [user]
-	name = Jochen Lillich
-	email = jochen@lillich.info
+  name = Jochen Lillich
+  email = jochen@lillich.info
 [alias]
-co = checkout
-# Usage: git track origin/feature-123-login-form
-track = checkout -t
-cp = cherry-pick
-st = status -s
-cl = clone
-ci = commit
-co = checkout
-br = branch
-diff = diff --word-diff
-dc = diff --cached
-r = reset
-r1 = reset HEAD^
-r2 = reset HEAD^^
-rh = reset --hard
-rh1 = reset HEAD^ --hard
-rh2 = reset HEAD^^ --hard
-sl = stash list
-sa = stash apply
-ss = stash save
+  # Abbreviations
+  co = checkout
+  cp = cherry-pick
+  st = status -s
+  cl = clone
+  ci = commit
+  co = checkout
+  br = branch
+  #
+  # Branches
+  #
+  # Track remote branch
+  track = checkout -t
+  # Create new tracking branch
+  ntb = "!f(){ git checkout -b \"$1\" && git push -u; }; f"
+  nuke-branch = "!f(){ git branch -d $1 && git push origin :$1; }; f"
+  #
+  # Reset
+  #
+  r = reset
+  r1 = reset HEAD^
+  r2 = reset HEAD^^
+  rh = reset --hard
+  rh1 = reset HEAD^ --hard
+  rh2 = reset HEAD^^ --hard
+  # Misc
+  diff = diff --word-diff
+  dc = diff --cached
+  sl = stash list
+  sa = stash apply
+  ss = stash save
   ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
   ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
   lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
@@ -37,9 +48,8 @@ ss = stash save
   diffr  = "!f() { git diff "$1"^.."$1"; }; f"
   grep = grep -Ii
   gr = grep -Ii
-	unstage = reset HEAD --
+  unstage = reset HEAD --
   staged = diff --cached
-  unstaged = diff
   assume = update-index --assume-unchanged
   assumeall = "!git st -s | awk {'print $2'} | xargs git assume"
   unassume = update-index --no-assume-unchanged
@@ -53,15 +63,15 @@ ss = stash save
 [apply]
   whitespace = warn
 [merge]
-	tool = /Users/geewiz/bin/git-diff-cmd.sh
+  tool = /Users/geewiz/bin/git-diff-cmd.sh
 [core]
-	excludesfile = /Users/geewiz/.gitignore
-	editor = vim
+  excludesfile = /Users/geewiz/.gitignore
+  editor = vim
 [color]
-	diff = auto
-	status = auto
+  diff = auto
+  status = auto
   branch = auto
-	ui = always
+  ui = always
 [help]
   autocorrect = 1
 [status]
@@ -70,12 +80,12 @@ ss = stash save
   # Only push branches that have been set up to track a remote branch.
   default = current
 [mergetool]
-	keepBackup = true
+  keepBackup = true
 [github]
-	user = geewiz
+  user = geewiz
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
