@@ -1,3 +1,6 @@
+# Emacs mode
+bindkey -e
+
 #
 # Search
 #
