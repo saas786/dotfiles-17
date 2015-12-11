@@ -17,6 +17,16 @@ alias gspp="git smart-pull && git push"
 alias gwip="git commit -amWIP"
 alias gm="git merge"
 
+# Github
+alias hpr="hub pull-request"
+
 # Ruby
 alias be="bundle exec"
 alias bi="bundle install"
+b() {
+  if [ $# -gt 0 ]; then
+    bundle exec $1
+  else
+    bundle install
+  fi
+}
