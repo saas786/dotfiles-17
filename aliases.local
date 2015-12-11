@@ -23,10 +23,3 @@ alias hpr="hub pull-request"
 # Ruby
 alias be="bundle exec"
 alias bi="bundle install"
-b() {
-  if [ $# -gt 0 ]; then
-    bundle exec $1
-  else
-    bundle install
-  fi
-}
