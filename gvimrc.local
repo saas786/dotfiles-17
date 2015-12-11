@@ -1,0 +1,2 @@
+" Disable balloon tooltips in Ruby files
+autocmd FileType ruby,eruby set noballooneval
