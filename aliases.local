@@ -2,20 +2,32 @@
 
 alias conncheck='mtr -s 1500 -r -c 1000 -i 0.1'
 
+#
 # Git
+#
 alias gss="git status -s"
-alias gco="git checkout"
 alias ga="git add"
 alias gc="git commit -v"
 alias gc!="git commit -v --amend"
 alias gca="git commit -v -a"
 alias gca!="git commit -v -a --amend"
-alias gb="git branch"
-alias glg="git log"
+alias gwip="git commit -amWIP"
 alias gsp="git smart-pull"
 alias gspp="git smart-pull && git push"
-alias gwip="git commit -amWIP"
+# Branches
+alias gco="git checkout"
+alias gb="git branch"
 alias gm="git merge"
+# Log
+alias glg='git log --stat --color'
+alias glgp='git log --stat --color -p'
+alias glgg='git log --graph --color'
+alias glgga='git log --graph --decorate --all'
+alias glgm='git log --graph --max-count=10'
+alias glo='git log --oneline --decorate --color'
+alias glol="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias glola="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all"
+alias glog='git log --oneline --decorate --color --graph'
 
 # Github
 alias hpr="hub pull-request"
