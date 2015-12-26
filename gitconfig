@@ -13,11 +13,16 @@
   #
   # Branches
   #
+  ours = "!f() { git co --ours $@ && git add $@; }; f"
+  theirs = "!f() { git co --theirs $@ && git add $@; }; f"
   # Track remote branch
   track = checkout -t
   # Create new tracking branch
   ntb = "!f(){ git checkout -b \"$1\" && git push -u; }; f"
-  nuke-branch = "!f(){ git branch -d $1 && git push origin :$1; }; f"
+  # Delete branch on origin and locally
+  nuke-branch = "!f(){ git push origin :$1 && git branch -d $1;  }; f"
+  # Get current branch
+  current-branch = !git symbolic-ref -q HEAD | sed -e 's|^refs/heads/||'
   #
   # Reset
   #
@@ -55,11 +60,8 @@
   unassume = update-index --no-assume-unchanged
   unassumeall = "!git assumed | xargs git update-index --no-assume-unchanged"
   assumed = "!git ls-files -v | grep ^h | cut -c 3-"
-  current-branch = !git symbolic-ref -q HEAD | sed -e 's|^refs/heads/||'
   lasttag = describe --tags --abbrev=0
   lt = describe --tags --abbrev=0
-  ours = "!f() { git co --ours $@ && git add $@; }; f"
-  theirs = "!f() { git co --theirs $@ && git add $@; }; f"
 [apply]
   whitespace = warn
 [merge]
