@@ -23,6 +23,8 @@
   nuke-branch = "!f(){ git push origin :$1 && git branch -d $1;  }; f"
   # Get current branch
   current-branch = !git symbolic-ref -q HEAD | sed -e 's|^refs/heads/||'
+  # Rebase master on current branch
+  rebase-upstream = "!f(){ git fetch origin && git rebase -i origin/master; }; f"
   #
   # Reset
   #
