@@ -1,5 +1,8 @@
 " Add a shortcut for netrw
-nmap <silent> <Leader>e :Explore<CR>
+nmap <silent> <leader>e :Explore<cr>
 
 " Always start on line 1 of Git commit messages
 au FileType gitcommit au! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
+
+" Launch Marked with file
+nmap <silent> <leader>m :MarkedOpen<cr>
