@@ -41,3 +41,7 @@ function lsdirs () {
     printf "%-10s %s\n" $key  ${NAMED_DIRS[$key]}
   done
 }
+
+#
+# Add repository bin/ as highest priority
+export PATH=.git/safe/../../bin:$PATH
