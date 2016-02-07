@@ -7,4 +7,5 @@ Plug 'itspriddle/vim-marked'
 " Airline status bar
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-
+" Auto-pair brackets
+Plug 'jiangmiao/auto-pairs'
