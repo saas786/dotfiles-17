@@ -6,3 +6,7 @@ au FileType gitcommit au! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
 
 " Launch Marked with file
 nmap <silent> <leader>m :MarkedOpen<cr>
+
+" Pimp my status bar
+let g:airline_powerline_fonts = 1
+let g:airline_theme='solarized'
