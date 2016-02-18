@@ -9,3 +9,5 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " Auto-pair brackets
 Plug 'jiangmiao/auto-pairs'
+" Better JSON
+Plug 'elzr/vim-json'

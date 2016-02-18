@@ -1,5 +1,5 @@
-" Add a shortcut for netrw
-nmap <silent> <leader>e :Explore<cr>
+" Add a shortcut for netrw; launch in first tab
+nmap <silent> <leader>e 1gt:Explore<cr>
 
 " Always start on line 1 of Git commit messages
 au FileType gitcommit au! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
