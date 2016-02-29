@@ -10,3 +10,6 @@ nmap <silent> <leader>m :MarkedOpen<cr>
 " Pimp my status bar
 let g:airline_powerline_fonts = 1
 let g:airline_theme='solarized'
+
+" Display extra whitespace
+set list listchars=tab:»·,trail:·,nbsp:·
