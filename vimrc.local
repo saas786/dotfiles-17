@@ -13,3 +13,9 @@ let g:airline_theme='solarized'
 
 " Display extra whitespace
 set list listchars=tab:»·,trail:·,nbsp:·
+
+" Keep fingers on home row
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
