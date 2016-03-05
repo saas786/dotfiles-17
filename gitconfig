@@ -87,11 +87,14 @@
   keepBackup = true
 [github]
   user = geewiz
+[diff]
+  tool = vimdiff
 [difftool "sourcetree"]
   cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-  path = 
+[difftool "vimdiff"]
+  cmd = vim -f -d \"$LOCAL\" \"$REMOTE\"
 [mergetool "sourcetree"]
   cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
   trustExitCode = true
 [commit]
-  template = ~/.gitcommittemplate
+  template = ~/.git_commit_template
