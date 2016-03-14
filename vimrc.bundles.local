@@ -11,3 +11,5 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'jiangmiao/auto-pairs'
 " Better JSON
 Plug 'elzr/vim-json'
+" ctags support
+Plug 'craigemery/vim-autotag'
