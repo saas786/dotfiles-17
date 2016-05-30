@@ -35,3 +35,34 @@ alias hpr="hub pull-request"
 # Ruby
 alias be="bundle exec"
 alias bi="bundle install"
+
+#
+# Rails, Heroku
+#
+
+function pdn() {
+  if [[ $# -gt 0 ]]
+  then
+    production "$@"
+  else
+    production console
+  fi
+}
+function sgn() {
+  if [[ $# -gt 0 ]]
+  then
+    staging "$@"
+  else
+    staging console
+  fi
+}
+function dev() {
+  if [[ $# -gt 0 ]]
+  then
+    bundle exec rails "$@"
+  else
+    bundle exec rails console
+  fi
+}
+
+# vi:syntax=zsh
