@@ -31,6 +31,7 @@ alias glog='git log --oneline --decorate --color --graph'
 
 # Github
 alias hpr="hub pull-request"
+alias hbr="hub browse"
 
 # Ruby
 alias be="bundle exec"
