@@ -4,9 +4,6 @@ Plug 'tomtom/tlib_vim'
 Plug 'garbas/vim-snipmate'
 " Call Marked from vim
 Plug 'itspriddle/vim-marked'
-" Airline status bar
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 " Auto-pair brackets
 Plug 'jiangmiao/auto-pairs'
 " Better JSON
