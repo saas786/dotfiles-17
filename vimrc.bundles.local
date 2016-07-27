@@ -10,3 +10,5 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'elzr/vim-json'
 " ctags support
 Plug 'craigemery/vim-autotag'
+" aligning code
+Plug 'godlygeek/tabular'
