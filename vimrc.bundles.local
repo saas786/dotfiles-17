@@ -1,3 +1,5 @@
+" Solarized colour theme
+Plug 'altercation/vim-colors-solarized'
 " Snippets
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
@@ -12,3 +14,5 @@ Plug 'elzr/vim-json'
 Plug 'craigemery/vim-autotag'
 " aligning code
 Plug 'godlygeek/tabular'
+" Dash integration
+Plug 'rizzatti/dash.vim'
