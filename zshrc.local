@@ -1,9 +1,6 @@
 # Path
 export PATH=~/bin:$PATH
 
-# Emacs mode
-bindkey -e
-
 #
 # Search
 #
