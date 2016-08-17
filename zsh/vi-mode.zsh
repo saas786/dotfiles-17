@@ -12,14 +12,13 @@ TRAPWINCH() {
 zle -N zle-keymap-select
 zle -N edit-command-line
 
-
 bindkey -v
 
 # allow v to edit the command line (standard behaviour)
 autoload -Uz edit-command-line
 bindkey -M vicmd 'v' edit-command-line
 
-# allow ctrl-p, ctrl-n for navigate history (standard behaviour)
+# allow ctrl-p, ctrl-n to navigate history (standard behaviour)
 bindkey '^P' up-history
 bindkey '^N' down-history
 
@@ -27,6 +26,9 @@ bindkey '^N' down-history
 bindkey '^?' backward-delete-char
 bindkey '^h' backward-delete-char
 bindkey '^w' backward-kill-word
+
+# ctrl-r starts searching history backward
+bindkey '^r' history-incremental-search-backward
 
 # if mode indicator wasn't setup by theme, define default
 if [[ "$MODE_INDICATOR" == "" ]]; then
