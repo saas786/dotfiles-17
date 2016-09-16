@@ -19,3 +19,9 @@ Plug 'rizzatti/dash.vim'
 " RSpec
 Plug 'thoughtbot/vim-rspec'
 Plug 'tpope/vim-dispatch'
+" Exchange text blocks
+Plug 'tommcdo/vim-exchange'
+" Replace text with register
+Plug 'vim-scripts/ReplaceWithRegister'
+" Same-indent text object
+Plug 'kana/vim-textobj-indent'
