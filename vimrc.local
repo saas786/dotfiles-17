@@ -1,6 +1,6 @@
-" Solarized Dark color scheme using the vim-colors-solarized plugin
+" Colors
 try
-    colorscheme atom-dark
+    colorscheme atom-dark-256
     set background=dark
 catch
 endtry
