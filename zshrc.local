@@ -1,5 +1,11 @@
+#
 # Path
+#
+
 export PATH="$HOME/.bin:$PATH"
+
+# Add bin dir in Git repositories if it's marked as safe by a subdirectory
+export PATH=.git/safe/../../bin:$PATH
 
 #
 # Search
@@ -8,42 +14,3 @@ export PATH="$HOME/.bin:$PATH"
 # Search history with cursor up/down
 bindkey '^[[A' up-line-or-search
 bindkey '^[[B' down-line-or-search
-
-#
-# Named directories
-# http://michael.thegrebs.com/2012/08/06/syncing-zsh-named-directories/
-#
-
-typeset -A NAMED_DIRS
-
-NAMED_DIRS=(
-  docs     ~/Dropbox/Documents
-  chef     ~/Documents/freistil/ops/chef
-  cb       ~/Documents/freistil/ops/chef/cookbooks
-  write    ~/Dropbox/Documents/Writing
-)
-
-for key in ${(k)NAMED_DIRS}
-do
-  if [[ -d ${NAMED_DIRS[$key]} ]]; then
-    hash -d $key=${NAMED_DIRS[$key]}
-  else
-    unset "NAMED_DIRS[$key]"
-  fi
-done
-
-function lsdirs () {
-  for key in ${(k)NAMED_DIRS}
-  do
-    printf "%-10s %s\n" $key  ${NAMED_DIRS[$key]}
-  done
-}
-
-#
-# Add repository bin/ as highest priority
-export PATH=.git/safe/../../bin:$PATH
-
-# iTerm2 shell integration
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-export PATH="$HOME/.bin:$PATH"
