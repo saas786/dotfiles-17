@@ -6,13 +6,13 @@ catch
 endtry
 
 " Add a shortcut for netrw; launch in first tab
-nmap <silent> <leader>e 1gt:Explore<cr>
+nmap <silent> <Leader>e 1gt:Explore<cr>
 
 " Always start on line 1 of Git commit messages
 au FileType gitcommit au! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
 
 " Launch Marked with file
-nmap <silent> <leader>m :MarkedOpen<cr>
+nmap <silent> <Leader>m :MarkedOpen<cr>
 
 " Pimp my status bar
 let g:airline_powerline_fonts = 1
@@ -28,7 +28,7 @@ noremap <Left> <NOP>
 noremap <Right> <NOP>
 
 " Quicker CtrlPTag
-nnoremap <leader>. :CtrlPTag<cr>
+nnoremap <Leader>. :CtrlPTag<cr>
 
 " Tabularize
 if exists(":Tabularize")
@@ -42,7 +42,7 @@ endif
 map <Leader>p :set paste<CR>o<esc>"*]p:set nopaste<CR>
 
 " Replace with clipboard using ReplaceWithRegister plugin
-nmap <leader>gr "*gr"
+nmap <Leader>gr "*gr"
 
 " Smarter splits
 set winwidth=84
@@ -58,3 +58,6 @@ nnoremap <Leader>l :call RunLastSpec()<CR>
 
 " vim-json
 let g:vim_json_syntax_conceal = 0
+
+" Quickly replace word under cursor
+:nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
