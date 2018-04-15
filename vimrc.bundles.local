@@ -1,3 +1,5 @@
+" NERDTree
+Plug 'scrooloose/nerdtree'
 " Solarized colour theme
 Plug 'altercation/vim-colors-solarized'
 " Snippets
