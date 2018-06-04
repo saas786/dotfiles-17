@@ -13,8 +13,11 @@ set noshowmode
 " Display extra whitespace
 set list listchars=tab:»·,trail:·,nbsp:·
 
-" Add a shortcut for netrw; launch in first tab
+" netrw
 nmap <silent> <Leader>e 1gt:Explore<cr>
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 3
 
 " Always start on line 1 of Git commit messages
 au FileType gitcommit au! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
