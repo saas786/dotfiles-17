@@ -1,4 +1,3 @@
 EXCLUDES="README*"
 SYMLINK_DIRS="gnupg"
 DOTFILES_DIRS="/home/geewiz/.dotfiles /home/geewiz/.freistil-dotfiles"
-
