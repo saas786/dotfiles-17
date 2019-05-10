@@ -25,3 +25,4 @@ else
 fi
 
 rcup -f -t $os_type -d ~/.dotfiles -d ~/.freistil-dotfiles
+reset
