@@ -70,7 +70,8 @@
   assumed = "!git ls-files -v | grep ^h | cut -c 3-"
   lasttag = describe --tags --abbrev=0
   lt = describe --tags --abbrev=0
- vdf = difftool
+  vdf = difftool
+  conflicts = diff --name-only --diff-filter=U
 [apply]
   whitespace = warn
 [merge]
