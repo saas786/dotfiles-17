@@ -104,3 +104,5 @@
 [gitsh]
   noGreeting = true
   defaultCommand = status --short --branch && :echo
+[fetch]
+	prune = true

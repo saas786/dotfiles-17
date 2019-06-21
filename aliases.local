@@ -7,15 +7,17 @@ alias sudot='sudo -i && curl -L https://www.dropbox.com/s/09dkgrp4xozm3kv/server
 #
 # Git
 #
-alias gss="git status -s"
 alias ga="git add"
-alias gc="git commit -v"
+alias gan="git add --intent-to-add"
+alias gap="git add --patch"
 alias gc!="git commit -v --amend"
-alias gca="git commit -v -a"
+alias gc="git commit -v"
 alias gca!="git commit -v -a --amend"
-alias gwip="git commit -amWIP"
+alias gca="git commit -v -a"
 alias gsp="git smart-pull"
 alias gspp="git smart-pull && git push"
+alias gss="git status -s"
+alias gwip="git commit -amWIP"
 # Branches
 alias gco="git checkout"
 alias gb="git branch"
