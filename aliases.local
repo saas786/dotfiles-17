@@ -2,7 +2,7 @@
 
 alias conncheck='mtr -s 1500 -r -c 1000 -i 0.1'
 alias writer='open -a "iA Writer"'
-alias sudot='sudo -i && curl -L https://www.dropbox.com/s/09dkgrp4xozm3kv/server-setup.sh\?dl\=1 | sh && exit'
+alias sudot='sudo -i; curl -L https://raw.githubusercontent.com/geewiz/dotfiles/master/bin/dotfiles | bash'
 
 #
 # Git
