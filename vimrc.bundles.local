@@ -1,5 +1,6 @@
-" Solarized colour theme
+" Colorschemes
 Plug 'altercation/vim-colors-solarized'
+Plug 'dracula/vim'
 " Snippets
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'

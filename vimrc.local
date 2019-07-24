@@ -1,6 +1,6 @@
 " Colors
 try
-    colorscheme atom-dark-256
+    colorscheme dracula
     set background=dark
 catch
 endtry
