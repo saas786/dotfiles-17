@@ -75,7 +75,7 @@
 [apply]
   whitespace = warn
 [merge]
-  tool = /Users/geewiz/bin/git-merge-cmd
+  tool = vimdiff
   conflictstyle = diff3
 [core]
   excludesfile = /Users/geewiz/.gitignore
