@@ -76,6 +76,7 @@
   whitespace = warn
 [merge]
   tool = /Users/geewiz/bin/git-merge-cmd
+  conflictstyle = diff3
 [core]
   excludesfile = /Users/geewiz/.gitignore
   editor = vim
@@ -93,6 +94,7 @@
   default = current
 [mergetool]
   keepBackup = true
+  prompt = false
 [github]
   user = geewiz
 [diff]
