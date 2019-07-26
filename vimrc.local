@@ -48,12 +48,6 @@ map <Leader>p :set paste<CR>o<esc>"*]p:set nopaste<CR>
 " Replace with clipboard using ReplaceWithRegister plugin
 nmap <Leader>gr "*gr"
 
-" Smarter splits
-set winwidth=84
-set winheight=5
-set winminheight=5
-set winheight=999
-
 " vim-rspec
 let g:rspec_command = 'Dispatch rspec {spec}'
 nnoremap <Leader>t :call RunCurrentSpecFile()<CR>
