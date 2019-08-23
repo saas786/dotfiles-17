@@ -28,18 +28,20 @@
   #
   # Reset
   #
-  r = reset
-  r1 = reset HEAD^
-  r2 = reset HEAD^^
-  rh = reset --hard
-  rh1 = reset HEAD^ --hard
-  rh2 = reset HEAD^^ --hard
+  unstage = reset HEAD --
+  undo-commit = reset --soft
+  clean = reset --hard
   #
   # diff
   #
+  dlc = diff --cached HEAD^
   diff = diff --word-diff
-  dc = diff --cached
+  staged = diff --cached
   df = diff --word-diff --color-words
+  dr  = "!f() { git diff "$1"^.."$1"; }; f"
+  diffr  = "!f() { git diff "$1"^.."$1"; }; f"
+  conflicts = diff --name-only --diff-filter=U
+  vdf = difftool
   #
   # Misc
   #
@@ -55,14 +57,9 @@
   filelog = log -u
   fl = log -u
   dl = "!git ll -1"
-  dlc = diff --cached HEAD^
-  dr  = "!f() { git diff "$1"^.."$1"; }; f"
   lc  = "!f() { git ll "$1"^.."$1"; }; f"
-  diffr  = "!f() { git diff "$1"^.."$1"; }; f"
   grep = grep -Ii
   gr = grep -Ii
-  unstage = reset HEAD --
-  staged = diff --cached
   assume = update-index --assume-unchanged
   assumeall = "!git st -s | awk {'print $2'} | xargs git assume"
   unassume = update-index --no-assume-unchanged
@@ -70,8 +67,6 @@
   assumed = "!git ls-files -v | grep ^h | cut -c 3-"
   lasttag = describe --tags --abbrev=0
   lt = describe --tags --abbrev=0
-  vdf = difftool
-  conflicts = diff --name-only --diff-filter=U
 [apply]
   whitespace = warn
 [merge]
