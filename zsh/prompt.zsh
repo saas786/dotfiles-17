@@ -107,3 +107,9 @@ ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_bold[green]%}%{✔%G%}"
 
 PROMPT='%B %n@%m %{$fg[green]%}%(4~|.../%3~|%~)%{${reset_color}%} %b$(git_super_status)
 %# '
+
+# Override with starship if available
+if which starship >/dev/null; then
+  eval $(starship init zsh)
+fi
+
