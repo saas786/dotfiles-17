@@ -25,6 +25,8 @@
   current-branch = !git symbolic-ref -q HEAD | sed -e 's|^refs/heads/||'
   # Rebase master on current branch
   rebase-upstream = "!f(){ git fetch origin && git rebase -i origin/master; }; f"
+  # Safe push
+  pf = "push --force-with-lease"
   #
   # Reset
   #
