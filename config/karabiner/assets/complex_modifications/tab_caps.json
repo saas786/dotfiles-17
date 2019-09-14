@@ -1,0 +1,30 @@
+{
+  "title": "Map Fn+Tab to Caps Lock",
+  "rules": [
+    {
+      "description": "Change Fn+Tab to Caps Lock",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "tab",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "caps_lock"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
