@@ -32,7 +32,7 @@
   #
   unstage = reset HEAD --
   undo-commit = reset --soft
-  clean = reset --hard
+  hardreset = reset --hard
   #
   # diff
   #
