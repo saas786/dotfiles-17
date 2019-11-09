@@ -1,0 +1,100 @@
+{
+  "title": "Legacy keyboards geewiz",
+  "type": "device_if",
+  "identifiers": [
+    {
+        "vendor_id": 1241,
+        "product_id": 297,
+        "description": "KBP V80"
+    },
+    {
+        "vendor_id": 3333,
+        "product_id": 4444,
+        "description": "Cherry G80-11900"
+    }
+  ],
+  "rules": [
+    {
+      "description": "Command, Option and Hyper keys",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_gui"
+          },
+          "to": [
+            {
+              "key_code": "left_alt"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_alt"
+          },
+          "to": [
+            {
+              "key_code": "left_gui"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_gui"
+          },
+          "to": [
+            {
+              "key_code": "right_alt"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_alt"
+          },
+          "to": [
+            {
+              "key_code": "right_gui",
+              "modifiers": [
+                "right_alt",
+                "right_shift",
+                "right_control"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Turn left and right ctrl into fn",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_control"
+          },
+          "to": [
+            {
+              "key_code": "fn"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_control"
+          },
+          "to": [
+            {
+              "key_code": "fn"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
