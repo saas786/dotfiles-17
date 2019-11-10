@@ -1,18 +1,5 @@
 {
   "title": "Legacy keyboards geewiz",
-  "type": "device_if",
-  "identifiers": [
-    {
-        "vendor_id": 1241,
-        "product_id": 297,
-        "description": "KBP V80"
-    },
-    {
-        "vendor_id": 3333,
-        "product_id": 4444,
-        "description": "Cherry G80-11900"
-    }
-  ],
   "rules": [
     {
       "description": "Command, Option and Hyper keys",
@@ -31,6 +18,23 @@
             {
               "key_code": "left_alt"
             }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                    "vendor_id": 1241,
+                    "product_id": 297,
+                    "description": "KBP V80"
+                },
+                {
+                    "vendor_id": 3333,
+                    "product_id": 4444,
+                    "description": "Cherry G80-11900"
+                }
+              ]
+            }
           ]
         },
         {
@@ -47,6 +51,23 @@
             {
               "key_code": "left_gui"
             }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                    "vendor_id": 1241,
+                    "product_id": 297,
+                    "description": "KBP V80"
+                },
+                {
+                    "vendor_id": 3333,
+                    "product_id": 4444,
+                    "description": "Cherry G80-11900"
+                }
+              ]
+            }
           ]
         },
         {
@@ -62,6 +83,23 @@
           "to": [
             {
               "key_code": "right_alt"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                    "vendor_id": 1241,
+                    "product_id": 297,
+                    "description": "KBP V80"
+                },
+                {
+                    "vendor_id": 3333,
+                    "product_id": 4444,
+                    "description": "Cherry G80-11900"
+                }
+              ]
             }
           ]
         },
@@ -82,6 +120,23 @@
                 "right_alt",
                 "right_shift",
                 "right_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                    "vendor_id": 1241,
+                    "product_id": 297,
+                    "description": "KBP V80"
+                },
+                {
+                    "vendor_id": 3333,
+                    "product_id": 4444,
+                    "description": "Cherry G80-11900"
+                }
               ]
             }
           ]
@@ -105,6 +160,23 @@
             {
               "key_code": "fn"
             }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                    "vendor_id": 1241,
+                    "product_id": 297,
+                    "description": "KBP V80"
+                },
+                {
+                    "vendor_id": 3333,
+                    "product_id": 4444,
+                    "description": "Cherry G80-11900"
+                }
+              ]
+            }
           ]
         },
         {
@@ -120,6 +192,23 @@
           "to": [
             {
               "key_code": "fn"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                    "vendor_id": 1241,
+                    "product_id": 297,
+                    "description": "KBP V80"
+                },
+                {
+                    "vendor_id": 3333,
+                    "product_id": 4444,
+                    "description": "Cherry G80-11900"
+                }
+              ]
             }
           ]
         }
