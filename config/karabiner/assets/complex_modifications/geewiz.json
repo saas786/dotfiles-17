@@ -20,7 +20,12 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "left_gui"
+            "key_code": "left_gui",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
           },
           "to": [
             {
@@ -31,7 +36,12 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "left_alt"
+            "key_code": "left_alt",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
           },
           "to": [
             {
@@ -42,7 +52,12 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "right_gui"
+            "key_code": "right_gui",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
           },
           "to": [
             {
@@ -53,7 +68,12 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "right_alt"
+            "key_code": "right_alt",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
           },
           "to": [
             {
@@ -74,7 +94,12 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "left_control"
+            "key_code": "left_control",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
           },
           "to": [
             {
@@ -85,7 +110,12 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "right_control"
+            "key_code": "right_control",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
           },
           "to": [
             {
