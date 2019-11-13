@@ -24,14 +24,19 @@
               "type": "device_if",
               "identifiers": [
                 {
-                    "vendor_id": 1241,
-                    "product_id": 297,
-                    "description": "KBP V80"
+                  "vendor_id": 1241,
+                  "product_id": 836,
+                  "description": "Vortex Tab75"
                 },
                 {
-                    "vendor_id": 3333,
-                    "product_id": 4444,
-                    "description": "Cherry G80-11900"
+                  "vendor_id": 1241,
+                  "product_id": 297,
+                  "description": "KBP V80"
+                },
+                {
+                  "vendor_id": 1241,
+                  "product_id": 5120,
+                  "description": "Cherry G80-11900"
                 }
               ]
             }
@@ -57,14 +62,19 @@
               "type": "device_if",
               "identifiers": [
                 {
-                    "vendor_id": 1241,
-                    "product_id": 297,
-                    "description": "KBP V80"
+                  "vendor_id": 1241,
+                  "product_id": 836,
+                  "description": "Vortex Tab75"
                 },
                 {
-                    "vendor_id": 3333,
-                    "product_id": 4444,
-                    "description": "Cherry G80-11900"
+                  "vendor_id": 1241,
+                  "product_id": 297,
+                  "description": "KBP V80"
+                },
+                {
+                  "vendor_id": 1241,
+                  "product_id": 5120,
+                  "description": "Cherry G80-11900"
                 }
               ]
             }
@@ -90,14 +100,19 @@
               "type": "device_if",
               "identifiers": [
                 {
-                    "vendor_id": 1241,
-                    "product_id": 297,
-                    "description": "KBP V80"
+                  "vendor_id": 1241,
+                  "product_id": 836,
+                  "description": "Vortex Tab75"
                 },
                 {
-                    "vendor_id": 3333,
-                    "product_id": 4444,
-                    "description": "Cherry G80-11900"
+                  "vendor_id": 1241,
+                  "product_id": 297,
+                  "description": "KBP V80"
+                },
+                {
+                  "vendor_id": 1241,
+                  "product_id": 5120,
+                  "description": "Cherry G80-11900"
                 }
               ]
             }
@@ -128,14 +143,19 @@
               "type": "device_if",
               "identifiers": [
                 {
-                    "vendor_id": 1241,
-                    "product_id": 297,
-                    "description": "KBP V80"
+                  "vendor_id": 1241,
+                  "product_id": 836,
+                  "description": "Vortex Tab75"
                 },
                 {
-                    "vendor_id": 3333,
-                    "product_id": 4444,
-                    "description": "Cherry G80-11900"
+                  "vendor_id": 1241,
+                  "product_id": 297,
+                  "description": "KBP V80"
+                },
+                {
+                  "vendor_id": 1241,
+                  "product_id": 5120,
+                  "description": "Cherry G80-11900"
                 }
               ]
             }
@@ -166,14 +186,19 @@
               "type": "device_if",
               "identifiers": [
                 {
-                    "vendor_id": 1241,
-                    "product_id": 297,
-                    "description": "KBP V80"
+                  "vendor_id": 1241,
+                  "product_id": 836,
+                  "description": "Vortex Tab75"
                 },
                 {
-                    "vendor_id": 3333,
-                    "product_id": 4444,
-                    "description": "Cherry G80-11900"
+                  "vendor_id": 1241,
+                  "product_id": 297,
+                  "description": "KBP V80"
+                },
+                {
+                  "vendor_id": 1241,
+                  "product_id": 5120,
+                  "description": "Cherry G80-11900"
                 }
               ]
             }
@@ -199,14 +224,19 @@
               "type": "device_if",
               "identifiers": [
                 {
-                    "vendor_id": 1241,
-                    "product_id": 297,
-                    "description": "KBP V80"
+                  "vendor_id": 1241,
+                  "product_id": 836,
+                  "description": "Vortex Tab75"
                 },
                 {
-                    "vendor_id": 3333,
-                    "product_id": 4444,
-                    "description": "Cherry G80-11900"
+                  "vendor_id": 1241,
+                  "product_id": 297,
+                  "description": "KBP V80"
+                },
+                {
+                  "vendor_id": 1241,
+                  "product_id": 5120,
+                  "description": "Cherry G80-11900"
                 }
               ]
             }
