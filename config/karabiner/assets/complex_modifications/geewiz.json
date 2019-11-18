@@ -121,6 +121,39 @@
         {
           "type": "basic",
           "from": {
+            "key_code": "right_gui",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_gui",
+              "modifiers": [
+                "right_alt",
+                "right_shift",
+                "right_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 10730,
+                  "product_id": 258,
+                  "description": "Kinesis Freestyle Edge"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
             "key_code": "right_alt",
             "modifiers": {
               "optional": [
@@ -199,6 +232,11 @@
                   "vendor_id": 1241,
                   "product_id": 5120,
                   "description": "Cherry G80-11900"
+                },
+                {
+                  "vendor_id": 10730,
+                  "product_id": 258,
+                  "description": "Kinesis Freestyle Edge"
                 }
               ]
             }
@@ -237,6 +275,11 @@
                   "vendor_id": 1241,
                   "product_id": 5120,
                   "description": "Cherry G80-11900"
+                },
+                {
+                  "vendor_id": 10730,
+                  "product_id": 258,
+                  "description": "Kinesis Freestyle Edge"
                 }
               ]
             }
