@@ -26,7 +26,12 @@
                 {
                   "vendor_id": 1241,
                   "product_id": 836,
-                  "description": "Vortex Tab75"
+                  "description": "Vortex Tab75 USB"
+                },
+                {
+                  "vendor_id": 2652,
+                  "product_id": 34050,
+                  "description": "Vortex Tab75 BT"
                 },
                 {
                   "vendor_id": 1241,
@@ -64,7 +69,12 @@
                 {
                   "vendor_id": 1241,
                   "product_id": 836,
-                  "description": "Vortex Tab75"
+                  "description": "Vortex Tab75 USB"
+                },
+                {
+                  "vendor_id": 2652,
+                  "product_id": 34050,
+                  "description": "Vortex Tab75 BT"
                 },
                 {
                   "vendor_id": 1241,
@@ -102,7 +112,12 @@
                 {
                   "vendor_id": 1241,
                   "product_id": 836,
-                  "description": "Vortex Tab75"
+                  "description": "Vortex Tab75 USB"
+                },
+                {
+                  "vendor_id": 2652,
+                  "product_id": 34050,
+                  "description": "Vortex Tab75 BT"
                 },
                 {
                   "vendor_id": 1241,
@@ -178,7 +193,12 @@
                 {
                   "vendor_id": 1241,
                   "product_id": 836,
-                  "description": "Vortex Tab75"
+                  "description": "Vortex Tab75 USB"
+                },
+                {
+                  "vendor_id": 2652,
+                  "product_id": 34050,
+                  "description": "Vortex Tab75 BT"
                 },
                 {
                   "vendor_id": 1241,
@@ -221,7 +241,12 @@
                 {
                   "vendor_id": 1241,
                   "product_id": 836,
-                  "description": "Vortex Tab75"
+                  "description": "Vortex Tab75 USB"
+                },
+                {
+                  "vendor_id": 2652,
+                  "product_id": 34050,
+                  "description": "Vortex Tab75 BT"
                 },
                 {
                   "vendor_id": 1241,
@@ -264,7 +289,12 @@
                 {
                   "vendor_id": 1241,
                   "product_id": 836,
-                  "description": "Vortex Tab75"
+                  "description": "Vortex Tab75 USB"
+                },
+                {
+                  "vendor_id": 2652,
+                  "product_id": 34050,
+                  "description": "Vortex Tab75 BT"
                 },
                 {
                   "vendor_id": 1241,
