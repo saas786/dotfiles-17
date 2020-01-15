@@ -1,6 +1,6 @@
 " Colors
 try
-    colorscheme dracula
+    colorscheme delek
     set background=dark
 catch
 endtry

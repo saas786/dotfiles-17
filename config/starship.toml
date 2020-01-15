@@ -26,8 +26,8 @@ prompt_order = [
 [hostname]
 disabled = false
 ssh_only = true
-prefix = "⟪"
-suffix = "⟫"
+prefix = "<"
+suffix = ">"
 
 [username]
 disabled = false
@@ -37,3 +37,11 @@ ssh_only = false
 [aws]
 disabled = true
 
+[character]
+symbol = ">"
+
+[ruby]
+symbol = "Ruby "
+
+[git_branch]
+symbol = ""
