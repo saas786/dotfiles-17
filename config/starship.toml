@@ -33,3 +33,7 @@ suffix = "⟫"
 disabled = false
 show_always = true
 ssh_only = false
+
+[aws]
+disabled = true
+
