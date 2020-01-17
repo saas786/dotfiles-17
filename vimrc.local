@@ -1,6 +1,6 @@
 " Colors
 try
-    colorscheme delek
+    colorscheme pablo
     set background=dark
 catch
 endtry
