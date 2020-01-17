@@ -1,0 +1,32 @@
+{
+  "title": "Turn right GUI key into Hyper key",
+  "rules": [
+    {
+      "description": "Turn right GUI into Hyper",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_gui",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_gui",
+              "modifiers": [
+                "right_alt",
+                "right_shift",
+                "right_control"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
