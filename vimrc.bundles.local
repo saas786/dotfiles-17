@@ -1,10 +1,6 @@
 " Colorschemes
 Plug 'altercation/vim-colors-solarized'
 Plug 'dracula/vim'
-" Snippets
-Plug 'MarcWeber/vim-addon-mw-utils'
-Plug 'tomtom/tlib_vim'
-Plug 'garbas/vim-snipmate'
 " Call Marked from vim
 Plug 'itspriddle/vim-marked'
 " Auto-pair brackets
@@ -26,3 +22,5 @@ Plug 'tommcdo/vim-exchange'
 Plug 'vim-scripts/ReplaceWithRegister'
 " Same-indent text object
 Plug 'kana/vim-textobj-indent'
+" Display indention levels with thin vertical lines
+Plug 'Yggdroot/indentLine'
