@@ -1,9 +1,3 @@
-# Simpler shell commands
-
-alias conncheck='mtr -s 1500 -r -c 1000 -i 0.1'
-alias writer='open -a "iA Writer"'
-alias sudot='sudo -i; curl -L https://raw.githubusercontent.com/geewiz/dotfiles/master/bin/dotfiles | bash'
-
 #
 # Git
 #
@@ -43,9 +37,20 @@ alias hci="hub ci-status"
 alias be="bundle exec"
 alias bi="bundle install"
 
-#
+# Shell shortcuts
+
+alias conncheck='mtr -s 1500 -r -c 1000 -i 0.1'
+alias writer='open -a "iA Writer"'
+
+# vim
+if which nvim >/dev/null
+then
+  alias v="nvim"
+else
+  alias v="vim"
+fi
+
 # Rails, Heroku
-#
 
 function pdn() {
   if [[ $# -gt 0 ]]
