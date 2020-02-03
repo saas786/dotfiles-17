@@ -42,14 +42,6 @@ alias bi="bundle install"
 alias conncheck='mtr -s 1500 -r -c 1000 -i 0.1'
 alias writer='open -a "iA Writer"'
 
-# vim
-if which nvim >/dev/null
-then
-  alias v="nvim"
-else
-  alias v="vim"
-fi
-
 # Rails, Heroku
 
 function pdn() {
