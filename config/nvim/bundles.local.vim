@@ -18,3 +18,5 @@ Plug 'tommcdo/vim-exchange'
 Plug 'vim-scripts/ReplaceWithRegister'
 " Same-indent text object
 Plug 'kana/vim-textobj-indent'
+" Display indention levels with thin vertical lines
+Plug 'Yggdroot/indentLine'

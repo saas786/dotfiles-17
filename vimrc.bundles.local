@@ -1,8 +1,6 @@
 " Colorschemes
 Plug 'altercation/vim-colors-solarized'
-Plug 'dracula/vim'
-" Call Marked from vim
-Plug 'itspriddle/vim-marked'
+Plug 'dracula/vim', {'as': 'dracula'}
 " Auto-pair brackets
 Plug 'jiangmiao/auto-pairs'
 " Better JSON
@@ -11,8 +9,6 @@ Plug 'elzr/vim-json'
 Plug 'craigemery/vim-autotag'
 " aligning code
 Plug 'godlygeek/tabular'
-" Dash integration
-Plug 'rizzatti/dash.vim'
 " RSpec
 Plug 'thoughtbot/vim-rspec'
 Plug 'tpope/vim-dispatch'
