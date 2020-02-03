@@ -1,13 +1,4 @@
 #
-# Path
-#
-
-export PATH="$HOME/.bin:$PATH"
-
-# Add bin dir in Git repositories if it's marked as safe by a subdirectory
-export PATH=.git/safe/../../bin:$PATH
-
-#
 # Search
 #
 
