@@ -20,3 +20,5 @@ Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'kana/vim-textobj-indent'
 " Display indention levels with thin vertical lines
 Plug 'Yggdroot/indentLine'
+" CoC
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
