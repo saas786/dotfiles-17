@@ -1,18 +1,18 @@
 prompt_order = [
   "username",
   "hostname",
+  "directory",
+  "git_branch",
+  "git_state",
+  "git_status",
   "ruby",
-  "package",
   "nodejs",
+  "package",
   "rust",
   "python",
   "golang",
   "java",
   "nix_shell",
-  "directory",
-  "git_branch",
-  "git_state",
-  "git_status",
   "aws",
   "env_var",
   "cmd_duration",
@@ -45,3 +45,9 @@ symbol = "Ruby "
 
 [git_branch]
 symbol = ""
+
+[nodejs]
+symbol = "Node "
+
+[package]
+symbol = "Pkg "
