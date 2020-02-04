@@ -5,6 +5,11 @@ try
 catch
 endtry
 
+" Disable cursor shape switching for buggy terminals
+:set guicursor=
+" Workaround for some broken plugins which set guicursor indiscriminately.
+" :autocmd OptionSet guicursor noautocmd set guicursor=
+
 " Status bar
 let g:airline_powerline_fonts = 1
 let g:airline_theme='dark'
