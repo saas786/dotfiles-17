@@ -1,14 +1,9 @@
 " Colors
 try
-    colorscheme delek
+    colorscheme dracula
     set background=dark
 catch
 endtry
-
-" Disable cursor shape switching for buggy terminals
-:set guicursor=
-" Workaround for some broken plugins which set guicursor indiscriminately.
-" :autocmd OptionSet guicursor noautocmd set guicursor=
 
 " Status bar
 let g:airline_powerline_fonts = 1
@@ -70,7 +65,39 @@ map <Leader>1 :diffget LOCAL<CR>
 map <Leader>2 :diffget BASE<CR>
 map <Leader>3 :diffget REMOTE<CR>
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" NERDTree
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Auto-open in directories
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
+" Shortcut key
+map <C-n> :NERDTreeToggle<CR>
+let g:NERDTreeIgnore = ['^node_modules$']
+let g:NERDTreeGitStatusWithFlags = 1
+
+" " Check if NERDTree is open or active
+function! IsNERDTreeOpen()
+  return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
+endfunction
+
+" Call NERDTreeFind iff NERDTree is active, current window contains a modifiable
+" file, and we're not in vimdiff
+function! SyncTree()
+  if &modifiable && IsNERDTreeOpen() && strlen(expand('%')) > 0 && !&diff
+    NERDTreeFind
+    wincmd p
+  endif
+endfunction
+
+" Highlight currently open buffer in NERDTree
+autocmd BufEnter * call SyncTree()
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CoC
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " if hidden is not set, TextEdit might fail.
 set hidden
 

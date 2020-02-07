@@ -22,3 +22,8 @@ Plug 'kana/vim-textobj-indent'
 Plug 'Yggdroot/indentLine'
 " CoC
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" NERDTree
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+
