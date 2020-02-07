@@ -40,14 +40,6 @@ disabled = true
 [character]
 symbol = ">"
 
-[ruby]
-symbol = "Ruby "
-
 [git_branch]
 symbol = ""
 
-[nodejs]
-symbol = "Node "
-
-[package]
-symbol = "Pkg "
