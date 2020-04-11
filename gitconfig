@@ -1,6 +1,3 @@
-[user]
-  name = Jochen Lillich
-  email = jochen@lillich.co
 [alias]
   # Abbreviations
   co = checkout
@@ -70,6 +67,7 @@
   assumed = "!git ls-files -v | grep ^h | cut -c 3-"
   lasttag = describe --tags --abbrev=0
   lt = describe --tags --abbrev=0
+	identity = "! git config user.name \"$(git config user.$1.name)\"; git config user.email \"$(git config user.$1.email)\"; git config user.signingkey \"$(git config user.$1.signingkey)\"; :"
 [apply]
   whitespace = warn
 [merge]
@@ -106,3 +104,13 @@
   defaultCommand = status --short --branch && :echo
 [fetch]
 	prune = true
+[user]
+	useConfigOnly = true
+[user "freistil"]
+	name = Jochen Lillich
+	email = jochen@freistil.it
+	signingkey = 1234
+[user "geewiz"]
+	name = Jochen Lillich
+	email = contact@geewiz.dev
+	signingkey = 2345
