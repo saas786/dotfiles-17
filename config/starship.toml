@@ -26,8 +26,6 @@ prompt_order = [
 [hostname]
 disabled = false
 ssh_only = true
-prefix = "<"
-suffix = ">"
 
 [username]
 disabled = false
@@ -36,10 +34,4 @@ ssh_only = false
 
 [aws]
 disabled = true
-
-[character]
-symbol = ">"
-
-[git_branch]
-symbol = ""
 
