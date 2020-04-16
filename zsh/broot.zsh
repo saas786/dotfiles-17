@@ -1,4 +1,4 @@
-which broot >/dev/null || exit
+which broot >/dev/null || return
 
 function br {
     f=$(mktemp)
