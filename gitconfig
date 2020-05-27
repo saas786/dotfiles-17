@@ -36,6 +36,7 @@
   #
   dlc = diff --cached HEAD^
   diff = diff --word-diff
+  wdiff = diff -w --word-diff=color
   staged = diff --cached
   df = diff --word-diff --color-words
   dr  = "!f() { git diff "$1"^.."$1"; }; f"
@@ -68,6 +69,7 @@
   lasttag = describe --tags --abbrev=0
   lt = describe --tags --abbrev=0
 	identity = "! git config user.name \"$(git config user.$1.name)\"; git config user.email \"$(git config user.$1.email)\"; git config user.signingkey \"$(git config user.$1.signingkey)\"; :"
+  root = rev-parse --show-toplevel
 [apply]
   whitespace = warn
 [merge]

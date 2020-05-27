@@ -27,6 +27,7 @@ alias glo='git log --oneline --decorate --color'
 alias glol="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias glola="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all"
 alias glog='git log --oneline --decorate --color --graph'
+alias groot='cd $(git root)'
 
 # Github
 alias hpr="hub pull-request"
@@ -41,6 +42,7 @@ alias bi="bundle install"
 
 alias conncheck='mtr -s 1500 -r -c 1000 -i 0.1'
 alias writer='open -a "iA Writer"'
+alias mux='tmuxinator'
 
 # Rails, Heroku
 
