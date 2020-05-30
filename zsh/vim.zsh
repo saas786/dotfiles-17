@@ -9,3 +9,6 @@ KEYTIMEOUT=5
 
 # Preserve search hotkey
 bindkey '^R' history-incremental-search-backward
+
+which nvim >/dev/null && alias vim=nvim
+
