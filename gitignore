@@ -1,0 +1,15 @@
+*~
+#*#
+*.bak
+.DS_Store
+.VolumeIcon.icns
+.fseventsd/
+Icon
+*.esproj
+*.tmproj
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+.Ulysses-*.plist
+tags
+gems.tags

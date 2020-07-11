@@ -1,0 +1,49 @@
+# Unix
+alias ll="ls -al"
+alias ln="ln -v"
+alias mkdir="mkdir -p"
+
+# Bundler
+alias b="bundle"
+
+# Rails
+alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
+alias s="rspec"
+
+# Pretty print the path
+alias path='echo $PATH | tr -s ":" "\n"'
+
+# Chef
+alias ksn='knife search node'
+alias kns='knife node show'
+alias kef='knife spork environment from file'
+alias kdf='knife spork data bag from file'
+alias krf='knife spork role from file'
+alias tkl='bundle exec kitchen list'
+alias tkt='bundle exec kitchen test'
+alias tkc='bundle exec kitchen converge'
+alias tkv='bundle exec kitchen verify'
+alias tkd='bundle exec kitchen destroy'
+alias tks='bundle exec kitchen login'
+
+# Docker
+alias dps='docker ps'
+alias dex='docker exec'
+alias drm='docker rm'
+alias dim='docker images'
+alias drmi='docker rmi'
+alias dc='docker-compose'
+alias dcup='docker-compose up'
+alias dcps='docker-compose ps'
+alias dcr='docker-compose run'
+
+# Tools
+which prettyping >/dev/null && alias ping='prettyping'
+
+# Make directory and change into it
+function mcd() {
+  mkdir -p "$1" && cd "$1";
+}
+
+# Include custom aliases
+[[ -f ~/.aliases.local ]] && source ~/.aliases.local

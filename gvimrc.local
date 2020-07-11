@@ -1,6 +1,0 @@
-" FiraCode font with ligatures
-set macligatures
-set guifont=Operator\ Mono\ Ssm:h16
-
-" Disable balloon tooltips in Ruby files
-autocmd FileType ruby,eruby set noballooneval

@@ -1,4 +1,4 @@
 EXCLUDES="README*"
 SYMLINK_DIRS="gnupg"
-DOTFILES_DIRS="/Users/geewiz/.dotfiles /Users/geewiz/.freistil-dotfiles"
+DOTFILES_DIRS="/Users/geewiz/.dotfiles"
 TAGS="Darwin"
