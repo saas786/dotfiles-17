@@ -10,6 +10,9 @@ os_type=$(uname -s)
 # Remove oh-my-zsh
 rm -rf ~/.oh-my-zsh
 
+# Remove the abandoned freistil dotfiles repo
+rm -rf ~/.freistil-dotfiles
+
 # Clone dotfiles repo
 if [[ -d ~/.dotfiles ]]; then
   cd ~/.dotfiles
