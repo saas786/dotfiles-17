@@ -116,3 +116,5 @@
 	name = Jochen Lillich
 	email = contact@geewiz.dev
 	signingkey = 2345
+[init]
+	defaultBranch = main
