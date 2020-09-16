@@ -1,0 +1,39 @@
+#!/bin/bash
+set -e
+
+os_type=$(uname -s)
+
+if ! which rcup >/dev/null; then
+  case $os_type in
+    Darwin)
+      brew install rcm
+      ;;
+    Linux)
+      wget -qO - https://apt.thoughtbot.com/thoughtbot.gpg.key | sudo apt-key add -
+      echo "deb https://apt.thoughtbot.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/thoughtbot.list
+      sudo apt-get update -y
+      sudo apt-get install -y rcm
+      ;;
+    *)
+      echo "Fatal: rcm is not supported on this machine."
+      exit 1
+      ;;
+  esac
+fi
+
+# Remove oh-my-zsh
+rm -rf ~/.oh-my-zsh
+
+# Remove the abandoned freistil dotfiles repo
+rm -rf ~/.freistil-dotfiles
+
+# Clone dotfiles repo
+if [[ -d ~/.dotfiles ]]; then
+  cd ~/.dotfiles
+  git pull
+else
+  git clone https://github.com/geewiz/dotfiles.git ~/.dotfiles
+fi
+
+rcup -f -t $os_type -d ~/.dotfiles
+reset
