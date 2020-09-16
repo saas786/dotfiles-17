@@ -3,16 +3,24 @@ set -e
 
 os_type=$(uname -s)
 
+if [[ "$UID" == 0 ]]; then
+  SUDO=""
+else
+  SUDO=`which sudo 2>/dev/null`
+fi
+
 if ! which rcup >/dev/null; then
   case $os_type in
     Darwin)
       brew install rcm
       ;;
     Linux)
-      wget -qO - https://apt.thoughtbot.com/thoughtbot.gpg.key | sudo apt-key add -
-      echo "deb https://apt.thoughtbot.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/thoughtbot.list
-      sudo apt-get update -y
-      sudo apt-get install -y rcm
+      $SUDO apt-get update -y
+      $SUDO apt-get install -y git wget apt-transport-https
+      wget -qO - https://apt.thoughtbot.com/thoughtbot.gpg.key | $SUDO apt-key add -
+      echo "deb https://apt.thoughtbot.com/debian/ stable main" | $SUDO tee /etc/apt/sources.list.d/thoughtbot.list
+      $SUDO apt-get update -y
+      $SUDO apt-get install -y rcm
       ;;
     *)
       echo "Fatal: rcm is not supported on this machine."
