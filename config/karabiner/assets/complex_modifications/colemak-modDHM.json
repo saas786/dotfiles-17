@@ -1295,7 +1295,7 @@
           },
           "to": [
             {
-              "key_code": "z"
+              "key_code": "x"
             }
           ]
         },
@@ -1330,7 +1330,7 @@
           },
           "to": [
             {
-              "key_code": "x"
+              "key_code": "c"
             }
           ]
         },
@@ -1365,7 +1365,7 @@
           },
           "to": [
             {
-              "key_code": "c"
+              "key_code": "d"
             }
           ]
         },
@@ -1400,7 +1400,7 @@
           },
           "to": [
             {
-              "key_code": "d"
+              "key_code": "b"
             }
           ]
         },
@@ -1435,7 +1435,7 @@
           },
           "to": [
             {
-              "key_code": "v"
+              "key_code": "z"
             }
           ]
         },
@@ -3247,7 +3247,7 @@
           },
           "to": [
             {
-              "key_code": "v",
+              "key_code": "b",
               "modifiers": [
                 "left_shift"
               ]
