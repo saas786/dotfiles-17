@@ -1400,7 +1400,7 @@
           },
           "to": [
             {
-              "key_code": "b"
+              "key_code": "v"
             }
           ]
         },
@@ -3207,47 +3207,6 @@
           "to": [
             {
               "key_code": "d",
-              "modifiers": [
-                "left_shift"
-              ]
-            }
-          ]
-        },
-        {
-          "conditions": [
-            {
-              "type": "device_if",
-              "identifiers": [
-                {
-                  "product_id": 2148,
-                  "vendor_id": 6134
-                }
-              ]
-            }
-          ],
-          "type": "basic",
-          "from": {
-            "key_code": "v",
-            "modifiers": {
-              "mandatory": [
-                "left_shift"
-              ],
-              "optional": [
-                "caps_lock",
-                "left_command",
-                "left_control",
-                "left_alt",
-                "left_shift",
-                "right_command",
-                "right_control",
-                "right_alt",
-                "right_shift"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "b",
               "modifiers": [
                 "left_shift"
               ]
@@ -5093,47 +5052,6 @@
           "to": [
             {
               "key_code": "d",
-              "modifiers": [
-                "right_shift"
-              ]
-            }
-          ]
-        },
-        {
-          "conditions": [
-            {
-              "type": "device_if",
-              "identifiers": [
-                {
-                  "product_id": 2148,
-                  "vendor_id": 6134
-                }
-              ]
-            }
-          ],
-          "type": "basic",
-          "from": {
-            "key_code": "v",
-            "modifiers": {
-              "mandatory": [
-                "right_shift"
-              ],
-              "optional": [
-                "caps_lock",
-                "left_command",
-                "left_control",
-                "left_alt",
-                "left_shift",
-                "right_command",
-                "right_control",
-                "right_alt",
-                "right_shift"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "v",
               "modifiers": [
                 "right_shift"
               ]
