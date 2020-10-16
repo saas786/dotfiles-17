@@ -16,6 +16,7 @@ alias gwip="git commit -amWIP"
 alias gco="git checkout"
 alias gb="git branch"
 alias gm="git merge"
+alias grb="git rebase"
 # Log
 alias glg='git log --stat --color'
 alias glgp='git log --stat --color -p'
