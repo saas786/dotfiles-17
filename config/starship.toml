@@ -1,37 +1,31 @@
-prompt_order = [
-  "username",
-  "hostname",
-  "directory",
-  "git_branch",
-  "git_state",
-  "git_status",
-  "ruby",
-  "nodejs",
-  "package",
-  "rust",
-  "python",
-  "golang",
-  "java",
-  "nix_shell",
-  "aws",
-  "env_var",
-  "cmd_duration",
-  "line_break",
-  "jobs",
-  "battery",
-  "time",
-  "character",
-]
+format = """
+[│](bold green)$status$directory$ruby$git_branch$git_status$git_state
+[└─>](bold green) """
+
+[aws]
+disabled = true
+
+[directory]
+format = " [$symbol$path]($style)"
+
+[git_branch]
+format = " [$symbol$branch]($style)"
 
 [hostname]
 disabled = false
 ssh_only = true
+
+[ruby]
+format = " [$symbol$version]($style)"
 
 [username]
 disabled = false
 show_always = true
 ssh_only = false
 
-[aws]
-disabled = true
+[status]
+style = "bg:red"
+symbol = "💣 "
+format = '[$symbol$status]($style) '
+disabled = false
 
