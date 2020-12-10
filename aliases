@@ -37,6 +37,9 @@ alias dcup='docker-compose up'
 alias dcps='docker-compose ps'
 alias dcr='docker-compose run'
 
+# Kubernetes
+alias kc="kubectl"
+
 # Tools
 which prettyping >/dev/null && alias ping='prettyping'
 
