@@ -15,12 +15,5 @@ load_all_files_in before
 load_all_files_in ""
 load_all_files_in after
 
-# iTerm2 shell integration
-[[ -f ~/.iterm2_shell_integration.zsh ]] && source ~/.iterm2_shell_integration.zsh
-
-# Search history with cursor up/down
-bindkey '^[[A' up-line-or-search
-bindkey '^[[B' down-line-or-search
-
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
