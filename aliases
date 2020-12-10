@@ -1,17 +1,66 @@
-# Unix
+#
+# Shell
+#
+
 alias ll="ls -al"
 alias ln="ln -v"
 alias mkdir="mkdir -p"
 
-# Bundler
-alias b="bundle"
-
-# Rails
-alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
-alias s="rspec"
+# Make directory and change into it
+function mcd() {
+  mkdir -p "$1" && cd "$1";
+}
 
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
+
+# Shortcuts
+alias writer='open -a "iA Writer"'
+alias mux='tmuxinator'
+alias conncheck='mtr -s 1500 -r -c 1000 -i 0.1'
+
+#
+# Tool improvements
+#
+
+which prettyping >/dev/null && alias ping='prettyping'
+which bat >/dev/null && alias cat=bat
+which exa >/dev/null && alias ls=exa
+
+#
+# Ruby
+#
+
+alias b="bundle"
+alias be="bundle exec"
+alias bi="bundle install"
+alias s="rspec"
+
+# thoughtbot/parity
+function pdn() {
+  if [[ $# -gt 0 ]]
+  then
+    production "$@"
+  else
+    production console
+  fi
+}
+function sgn() {
+  if [[ $# -gt 0 ]]
+  then
+    staging "$@"
+  else
+    staging console
+  fi
+}
+function dev() {
+  if [[ $# -gt 0 ]]
+  then
+    bundle exec rails "$@"
+  else
+    bundle exec rails console
+  fi
+}
 
 # Chef
 alias ksn='knife search node'
@@ -40,13 +89,4 @@ alias dcr='docker-compose run'
 # Kubernetes
 alias kc="kubectl"
 
-# Tools
-which prettyping >/dev/null && alias ping='prettyping'
-
-# Make directory and change into it
-function mcd() {
-  mkdir -p "$1" && cd "$1";
-}
-
-# Include custom aliases
-[[ -f ~/.aliases.local ]] && source ~/.aliases.local
+# vi:syntax=zsh
